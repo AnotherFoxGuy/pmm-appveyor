@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(MD5Encrypter)
 
+find_package (Python)
+
+include(FeatureSummary)
+feature_summary(WHAT ALL)
+
 #include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 #conan_basic_setup()
 
