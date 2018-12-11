@@ -10,25 +10,19 @@ Example of and MD5 calculation app using POCO C++ libraries installed with Conan
     $ mkdir build && cd build
     ```
 
-2. Install dependencies (Poco -> OpenSSL -> zlib):
-
-    ```
-    $ conan install ..
-    ```
-
-3. Configure the CMake project (Using MSVC 15 in this example):
+2. Configure the CMake project (Using MSVC 15 in this example):
 
     ```
     $ cmake .. -G "Visual Studio 15 2017 Win64"
     ```
 
-4. Build it:
+3. Build it:
 
     ```
     $ cmake --build . --config Release
     ```
 
-5. Run the application:
+4. Run the application:
 
     ```
     $ .\bin\md5.exe
