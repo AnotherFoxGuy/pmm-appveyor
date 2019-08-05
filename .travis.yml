@@ -1,0 +1,6 @@
+dist: xenial
+language: cpp
+
+script:
+  - cmake .
+  - make -j2
