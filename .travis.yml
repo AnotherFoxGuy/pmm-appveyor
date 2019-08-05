@@ -3,4 +3,5 @@ language: cpp
 
 script:
   - cmake .
+  - cat ./_pmm/1.5.0/vcpkg.cmake
   - make -j2
