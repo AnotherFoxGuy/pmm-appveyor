@@ -19,9 +19,11 @@ if (NOT pmm_repo_POPULATED)
     FetchContent_Populate(PMM_REPO)
 endif ()
 
-include(${pmm_repo_SOURCE_DIR}/pmm.cmake)
+
 set(PMM_ALWAYS_DOWNLOAD TRUE)
 set(PMM_URL "file://${pmm_repo_SOURCE_DIR}/pmm")
+
+include(${pmm_repo_SOURCE_DIR}/pmm.cmake)
 
 pmm(VCPKG REVISION f9fedc930cf36ce6cec69a3d09879b3c7f23eb0b REQUIRES poco)
 
