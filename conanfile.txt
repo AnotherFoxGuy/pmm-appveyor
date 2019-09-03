@@ -1,6 +1,5 @@
 [requires]
 Poco/1.9.0@pocoproject/stable
-qt/5.12.3@bincrafters/stable
 
 [generators]
 cmake
